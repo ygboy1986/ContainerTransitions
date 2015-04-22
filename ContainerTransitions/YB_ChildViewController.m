@@ -42,9 +42,8 @@
     [self.view addSubview:self.privateTitleLabel];
     
     //添加视图标签
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.privateTitleLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:0.6 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.privateTitleLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:0.6f constant:0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.privateTitleLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.privateTitleLabel attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
     
 
@@ -57,7 +56,7 @@
     self.privateTitleLabel.text = self.title;
     [self _updateAppearance];
     //添加通知
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(_contentSizeCategoryDidChangeWithNotification) name:UIContentSizeCategoryDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(_contentSizeCategoryDidChangeWithNotification:) name:UIContentSizeCategoryDidChangeNotification object:nil];
 }
 
 #pragma mark - 私有方法

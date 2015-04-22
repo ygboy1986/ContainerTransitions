@@ -399,6 +399,7 @@
 				98BCDAC51AE63E3E0035185D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98BCDAC61AE63E3E0035185D /* Build configuration list for PBXNativeTarget "ContainerTransitionsTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +408,7 @@
 				98BCDAC81AE63E3E0035185D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
